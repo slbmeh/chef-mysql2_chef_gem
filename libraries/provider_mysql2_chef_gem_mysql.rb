@@ -2,6 +2,7 @@ class Chef
   class Provider
     class Mysql2ChefGem
       class Mysql < Chef::Provider::LWRPBase
+        provides :mysql2_chef_gem_mysql
         include Chef::DSL::IncludeRecipe
         use_inline_resources if defined?(use_inline_resources)
 
